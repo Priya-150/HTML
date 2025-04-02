@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+</head>
+<body>
+    <!--checkbox-->
+    select fruits of your choice:
+    <input type="checkbox" name="fruit1" value="mango">mango
+    <input type="checkbox" name="fruit2" value="orange">orange
+    <input type="checkbox" name="fruit3" value="apple" checked>apple
+    <input type="checkbox" name="fruit4" value="kiwi">kiwi
+    <br></br>
+    <!--radiobutton-->
+    select any one carbrand:
+    <input type="radio" name="cars" value="audi" checked >audi
+    <input type="radio" name="cars" value="fiat">fiat
+    <input type="radio" name="cars" value="kia">kia
+    <input type="radio" name="cars" value="fiat">fiat
+    <input type="radio" name="cars" value="toyoto">toyoto
+    <br></br>
+    <!--dropdown-->
+    <label for="subjects">choose subjects:</label>
+    <select name="subjects" id="subs" size="2" multiple>
+        <option value="math">math</option>
+        <option value="physics">physics</option>
+        <option value="chemistry" selected>chemistry</option>
+        <option value="cs">cs</option>
+    </select>
+    <br></br>
+
+    <label for="cricketers">choose cricketers:</label>
+    <select name="cricketers" id="cricketers" size="1" multiple>
+        <option value="dhoni">dhoni</option>
+        <option value="ruthuraj">ruthuraj</option>
+        <option value="raina" selected>raina</option>
+        <option value="sam curran">sam curran</option>
+    </select>
+    <br>
+
+    <br></br>
+
+    <label for="cricketers">choose cricketers:</label>
+    <select name="cricketers" id="cricketers" size="1">
+        <option value="dhoni">dhoni</option>
+        <option value="ruthuraj">ruthuraj</option>
+        <option value="raina">raina</option>
+        <option value="sam curran">sam curran</option>
+    </select>
+    <br></br>
+    <!--numberbox or spinbox-->
+    select a number:
+    <input type="number" name="num" id="num" value="0" size="5"
+    max="100" min="0" step="5">
+    <br></br>
+    <!--date-->
+    enter date of birth:
+    <input type="date" name="dob" id="dob"
+    max="2025-12-30" min="2005-01-01">
+    <br></br>
+    <!--time-->
+    enter time:
+    <input type="time" name="curtime" id="ct">
+    <br></br>
+    <!--textarea-->
+    <textarea name="aboutyou" id="ay" rows="5" col="30">
+        describe in 20 words...
+    </textarea> <br></br>
+    <!--email-->
+    enter email id:
+    <input type="email" name="email_id" id="email_id" required>
+    <br></br>
+    <!--search box-->
+    <input type="search" name="searchbox" id="sb">
+    <br></br>
+    <!--URL-->
+    <input type="url" name="url" id="url">
+    <!--button-->
+    <br>
+    <button onclick="document.location='http://www.google.com'">
+        google
+    </button>
+</body>
+</html>

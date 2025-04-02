@@ -1,0 +1,36 @@
+/*element selector*/
+p{
+    color: brown;
+}
+/*id selector*/
+#navbar a{
+    background-color: aqua;
+}
+/*descendant combinator (space)*/
+#navbar a{
+    text-decoration: none;
+    padding: 10px;
+}
+/*class selector*/
+.head{
+    color:crimson;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px green;
+}
+h1.head{
+    text-align: right;
+    text-decoration: underline;
+    color: black;
+
+}
+/*group selector*/
+p,
+ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*universal selector*/
+* {
+    text-transform: capitalize;
+}
+

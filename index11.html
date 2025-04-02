@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        /*decendant combination*/
+        div p{
+            background-color: yellow;
+            width: 30%;
+        }
+        /*child combinator*/
+        div >p{
+            color: blue;
+        }
+        /*adjacent sibling combinator (+)*/
+        div+p{
+            background-color: cadetblue;
+            width:30%;
+        }
+        /*next-sibling combinator (~)*/
+        div~p{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p>1st paragraph</p>
+    <p>2nd paragraph</p>
+    <section>
+        <p>3rd paragraph</p>
+        <p>4th paragraph</p>
+    </section>
+</div>
+<p>5th paragraph</p>
+<p>6th paragraph</p>
+</body>
+</html>
