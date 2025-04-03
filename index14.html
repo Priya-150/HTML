@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2</title>
+</head>
+<body>
+    <style>
+        div{
+            background-color: aqua;
+            height:210px;
+            width:50%;
+            border : 5px solid black;
+            border-radius: 40px;
+            /*margin: 50px 100px 150px 200px;*/
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px 20px;
+            outline: 5px dashed black;
+            outline-offset:5px ;
+            overflow: auto;
+        }
+        h2{
+            color:#acddaf;
+            text-decoration:underline;
+            text-decoration-color:black;
+        }
+        h3{
+            color:rgb(0,0,120);
+            text-align: right;
+            text-decoration: overline;
+            text-decoration-style: double;
+            text-decoration-thickness: 2px;
+        }
+        p{
+            color:#f00000;
+            text-align: justify;
+            text-transform: capitalize;
+            text-shadow: #f00000;
+            text-shadow: 2px 2px 5px black,2px 2px 5px blue;
+            letter-spacing: 3px;
+            /*letter-spacing:-3px*/
+            word-spacing: 1.2;
+            text-align-last: right;
+        }
+
+        p::first-letter {
+            color:yellow;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            font-variant: small-caps;
+            font-weight: 1000;
+        }
+
+        p::first-line {
+            color: darkblue;
+            font-size: medium;
+        }
+
+        p::selection {
+            background-color: black;
+            color: gold;
+        }
+        ul li::marker {
+            color: blue;
+        }
+
+        h2::before {
+            content: url("./pic/thinking-male.png");
+        }
+
+        h2::after {
+            content: url("./pic/thinking-male.png");
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 align="center">HTML PROGRAMMING</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum atque tempora repudiandae id, vel maxime
+             sint nobis placeat, eveniet ipsa neque molestiae quaerat minus reprehenderit eligendi consequatur asperiores debitis.</p>
+
+        <h3 align="right">CSS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, qui illum nemo, nam similique aut fuga
+                 neque eaque, voluptatum doloremque blanditiis voluptatem consectetur est sint. Repellendus numquam quisquam libero
+                 rerum.</p>
+                 <ul>
+                    <li>INLINE CSS</li>
+                    <li>EXTERNAL CSS</li>
+                </ul>
+        
+    </div>
+</body>
+</html>
+</body>
+</html>

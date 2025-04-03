@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Link</title>
+    <style>
+        .container1 a{
+            color:pink;
+        }
+        .container1 a:active{
+            color:aqua;
+        }
+        .container1 a:visited{
+            color: blueviolet;
+        }
+        .container1 a:hover{
+            color:coral;
+            text-decoration: underline;
+        }
+        .container1 +a{
+            display: inline-block ;
+            border: 1px solid red;
+            margin-top: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;
+            background-color: lightcoral;
+            color: yellow;
+        }
+        .container1 + a:hover{
+            color:white;
+            border-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <a href="http://www.google.com" target="_blank">Google</a>
+    </div>
+    <a href="C:\Users\HP\OneDrive\Desktop\HTML\index4.html" target="_parent">Click</a>
+</body>
+</html>
